@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="container">
+	    <div class="row">
+	        <div class="col-sm-4">widget</div>
+	        <div class="col-sm-8">content</div>
+	        <div class="col-xs-12">footer</div>
+	    </div>
+	</div>
+	<p>
+  <strong class="gcg-page-strong">Titúlo:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong class="gcg-page-strong">Texto:</strong>
+  <%= @article.text %>
+</p>
+ 
+<h2 class="gcg-page-title">Comentários</h2>
+<%= render @article.comments %>
+ 
+<h2>Adicione um comentário:</h2>
+<%= render 'comments/form' %>
+ 
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+</div>

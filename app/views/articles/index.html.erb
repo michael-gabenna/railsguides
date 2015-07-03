@@ -1,0 +1,67 @@
+<div class="container gcg-container">
+    <div class="row">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-md-4">logo</div>
+            <div class="col-md-8">Menu</div>
+        </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-md-4">aside</div>
+            <div class="col-md-8">content</div>
+        </div>
+        </div>
+        <div class="col-xs-12">footer</div>
+    </div>    
+</div>
+
+<h1>Todos os Artigos</h1>
+ <span class="link_new_article gcg_btn"><%= link_to 'Novo artigo', new_article_path %></span>
+
+<!--div class="row">
+        <% @articles.each do |article| %>
+          <div class="col-md-3">
+            <section>
+              <h2 class="gcg_title_article">Titúlo</h2>
+              <p><%= article.title %></p>
+            </section>
+          </div>
+          <div class="col-md-6">
+            <section>
+              <h2 class="gcg_title_article">Texto</h2>
+              <p><%= article.text %></p>
+            </section>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li class="gcg_btn_view"><%= link_to 'ver', article_path(article) %></li>
+              <li class="gcg_btn_edit"><%= link_to 'Editar', edit_article_path(article) %></li>
+              <li class="gcg_btn_destroy"><%= link_to 'deletar', article_path(article),
+                method: :delete,
+                data: { confirm: 'Você realmente deseja fazer isso?' } %></li>
+            </ul>
+          </div>
+        <% end %>
+    </div-->
+<table id="gcg_articles_content">
+  <tr>
+    <th class="gcg_title_table">Ttúlo</th>
+    <th class="gcg_title_table">Conteúdo</th>
+    <th class="gcg_title_table_last">Ação</th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td class="gcg_title_table gcg_table_content_title"><%= article.title %></td>
+      <td class="gcg_title_table gcg_table_content_text"><%= article.text %></td>
+      <td class="cgc_link_view gcg_btn gcg_item"><%= link_to 'ver', article_path(article) %></td>
+      <td class="cgc_link_edit gcg_btn gcg_item"><%= link_to 'Editar', edit_article_path(article) %></td>
+      <td class="cgc_link_destroy gcg_btn gcg_item"><%= link_to 'deletar', article_path(article),
+              method: :delete,
+              data: { confirm: 'Você realmente deseja fazer isso?' } %></td>
+    </tr>
+  <% end %>
+</table>
+<h1>Hello, Rails!</h1>
+<h2 class="gcg_btn"><%= link_to 'Blog - Inicio', controller: 'articles' %></h2>

@@ -1,0 +1,147 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Philosopher);
+body{
+	font-family: 'Philosopher', sans-serif !important;
+}
+
+span.link_new_article a {
+	color: #FFFFFF;
+	font-weight: 600;
+}
+span.link_new_article {
+  background-color: #ff0;
+  color: #ccc;
+  display: block;
+  margin-bottom: 1em;
+}
+
+th.gcg_title_table, th.gcg_title_table_last {
+  background-color: #F7F7F7;
+  color: #1981CB;
+  padding: 4px;
+  border-right: 1px solid #E4E4E4;
+  border-bottom: 2px solid #ccc;
+}
+
+span.gcg_btn, td.gcg_btn, h2.gcg_btn {
+  background-color: #26C897;
+  display: block;
+  margin-bottom: 1em;
+  width: 170px;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom: 2px solid #919191;
+}
+
+
+td.cgc_link_edit a:before {
+  content: "\f044";
+  font-family: FontAwesome;
+  font-size: 23px;
+}
+td.cgc_link_destroy a:before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  font-size: 23px;
+}
+td.cgc_link_view a:before {
+  content: "\f06e";
+  font-family: FontAwesome;
+  font-size: 23px;
+}
+
+td.gcg_btn a, td.gcg_btn a, td.gcg_btn a{
+	font-family: FontAwesome;
+	font-size: 23px;
+}
+td.cgc_link_edit, td.cgc_link_view, td.cgc_link_destroy{
+	float: left;
+	width: 40px;
+	margin: 0 auto;
+	margin-left: 8px;
+	margin-bottom: 10px;
+	margin-top: 14px;
+}
+
+td.cgc_link_edit a, td.cgc_link_view a, td.cgc_link_destroy a {
+  font-size: 0px;
+}
+td.gcg_table_content_text {
+  width: 64%;
+}
+td.gcg_table_content_title {
+  font-weight: 600;
+}
+td.gcg_title_table {
+	border-left: 1px solid #F0EFEF;
+	border-bottom: 1px solid #F4F4F4;
+	padding-left: 15px;
+}
+
+td.cgc_link_view{
+	background-color: #78D009;
+}
+td.cgc_link_view a:before{
+	color: #000;
+}
+td.cgc_link_destroy{
+	background-color: #DB0707;
+}
+td.cgc_link_destroy a:before{
+	color: #000;
+}
+td.cgc_link_edit{
+	background-color: #F5BE2D;
+}
+td.cgc_link_edit a:before{
+	color: #000;
+}
+.gcg-page-comment {
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  padding: 1px 30px;
+}
+.gcg-page-comment input, .gcg-page-comment textarea {
+  background-color: #FFFFFF;
+  border: 1px solid #DDD;
+  padding: 5px;
+  border-bottom: 2px solid #ADADAD;
+  border-radius: 4px;
+}
+.gcg-page-comment input:active, .gcg-page-comment textarea:active{
+ -webkit-box-shadow: 1px 2px 10px 2px #E0E0E0;
+  box-shadow: -1px 1px 2px 1px #E0E0E0; 
+}
+.gcg-page-comment input:focus, .gcg-page-comment textarea:focus{
+   -webkit-box-shadow: 1px 2px 10px 2px #E0E0E0;
+  box-shadow: -1px 1px 2px 1px #E0E0E0; 
+}
+h2.gcg-page-title {
+  color: #ff0;
+  background-color: #F4F4F4;
+  border-bottom: 1px solid #0081FF;
+  color: #8C8C8C;
+  font-size: 1.4em;
+  padding: 8px 11px;
+  border-radius: 4px;
+}
+
+td.cgc_link_view.gcg_btn.gcg_item:hover {
+  background-color: #ff0;
+}
+td.cgc_link_edit:hover{
+  background: #f1f1f1;
+};
+td.cgc_link_destroy:hover{
+  background: #ff0000;
+}
+.gcg-comment-single {
+  background-color: #F7F7F7;
+  padding: 10px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid #CBCBC1;
+  border-radius: 4px;
+}
